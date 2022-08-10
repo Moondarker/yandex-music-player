@@ -87,7 +87,5 @@ function createMenu() {
 }
 
 function getIcon() {
-  const isDarkMode = nativeTheme.shouldUseDarkColors
-  const iconName = isDarkMode ? 'dark_icon' : 'main_icon'
-  return `${__dirname}/../assets/icons/${iconName}.png`
+  return `${__dirname}/../assets/icons/main_icon.png`
 }
