@@ -81,7 +81,7 @@ class YandexMusicPlayer {
     })
 
     // Make main section larger
-    const playerWrapperClass = 'centerblock-wrapper'
+    const playerWrapperClass = '.centerblock-wrapper'
     const plyDom = q(playerWrapperClass)
     if (plyDom) {
       plyDom.style.width = '100%'
