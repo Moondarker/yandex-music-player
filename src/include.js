@@ -72,13 +72,20 @@ class YandexMusicPlayer {
     })
 
     // Hiding ads
-    const hideAdClasses = ['.bar-below_plus', '.notify', '.bar__branding']
+    const hideAdClasses = ['.sidebar__placeholder', '.bar-below_plus', '.notify', '.bar__branding']
     hideAdClasses.forEach((adClass) => {
       const adDom = q(adClass)
       if (adDom) {
         adDom.style.display = 'none'
       }
     })
+
+    // Hiding ads
+    const playerWrapperClass = 'centerblock-wrapper'
+    const plyDom = q(playerWrapperClass)
+    if (plyDom) {
+      plyDom.style.width = '100%'
+    }
 
     // Fixing auto pause with ad
     const button = q('.crackdown-popup__close')
