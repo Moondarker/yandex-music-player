@@ -80,7 +80,7 @@ class YandexMusicPlayer {
       }
     })
 
-    // Hiding ads
+    // Make main section larger
     const playerWrapperClass = 'centerblock-wrapper'
     const plyDom = q(playerWrapperClass)
     if (plyDom) {
